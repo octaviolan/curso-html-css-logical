@@ -1,0 +1,150 @@
+/*
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-italic.otf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-bold-italic.otf');
+  font-style: italic;
+  font-weight: bold;
+}
+*/
+:root {
+  font-size: 18px;
+  --white10: #FFFFFF;
+  --white20: #A5A3A5;
+  --white30: #3A3539;
+  --white40: #251F24;
+  /* direction: rtl; */
+}
+
+body {
+  color: var(--white40);
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Nunito', sans-serif;
+  background: var(--white40);
+  color: var(--white10);
+  margin: 0;
+}
+
+header {
+  font-size: 14px;
+  color: var(--white10);
+}
+
+header li {
+  color: var(--white20);
+}
+
+header a {
+   color: var(--white20);
+   text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white10);
+}
+
+nav details summary {
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: start;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+pre {
+  background: var(--white30);
+}
+
+p{
+  color: var(--white20);
+}
+
+.hero {
+  height: 350px;
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+  /* background: linear-gradient(3.36deg, #212325 -63.62%, rgba(255, 255, 255, 0) 43.49%), url('../images/pattern.png'); */
+  /* background-repeat: repeat; */
+  /* background-position: center; */
+  background-size: cover, 100px 100px;
+}
+
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal);
+}
+
+.section-content h3::after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--white20);
+}
+
+blockquote {
+  background: var(--white30);
+}
+
+.main hr {
+  display: none;
+}
+
+.main {
+  /* border: 1px solid red; */
+}
+
+.wrapper {
+  /* border: 1px solid yellow; */
+  max-inline-size: 636px;
+  margin: auto;
+}
+
+.main-content {
+  /* border: 1px solid blue; */
+}
