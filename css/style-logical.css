@@ -36,6 +36,10 @@
   /* direction: rtl; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--white40);
   /* font-family: 'Roboto', sans-serif; */
@@ -49,13 +53,35 @@ body {
   /* margin-block: 50px; */
 }
 
+.header {
+  position: sticky;
+  inset-block-start: -45px;
+}
+
+.header-content {
+  position: relative;
+  inset-block-start: 64px;
+}
+
 header {
   font-size: 14px;
   color: var(--white10);
+  position: absolute;
+  /* top */
+  /* inset-block-start: 0; */
+  /* bottom */
+  /* inset-block-end: ; */
+  /* left */
+  inset-inline-start: -330px;
+  margin-block-start: 0;
+  inline-size: 188px;
+  /* right */
+  /* inset-inline-end: ; */
 }
 
 header li {
   color: var(--white20);
+  margin-block-end: 16px;
 }
 
 header a {
@@ -93,13 +119,14 @@ h3 {
   margin-block: 16px;
 }
 
-hr {
-  margin-block: 40px;
-  border-color: rgba(97, 97, 97, 0.2);
-}
-
 pre {
   background: var(--white30);
+  padding: 40px;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  margin-block: 16px;
+  overflow: auto;
+  border-radius: 8px;
 }
 
 p{
@@ -133,19 +160,20 @@ p{
   content: counter(titleList, decimal)'. ';
 }
 
-.section-content h3::after {
+/* .section-content h3::after {
   content: "";
   display: inline-block;
   width: 80px;
   height: 4px;
   background-color: var(--white20);
-}
+} */
 
 blockquote {
   margin-block-start: 80px;
   margin-block-end: 63px;
+  margin-inline: 0;
   padding-block: 24px;
-  padding-inline-start: 24px;
+  padding-inline-start: 17px;
   padding-inline-end: 17px;
   border-radius: 8px;
   background: var(--white30);
@@ -153,6 +181,10 @@ blockquote {
 
 blockquote p{
   margin: 0;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--white10);
 }
 
 blockquote p:first-of-type {
@@ -160,7 +192,13 @@ blockquote p:first-of-type {
 }
 
 .main hr {
+  display: none;
+}
+
+.main hr:first-of-type {
   display: block;
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
 }
 
 .main {
@@ -169,10 +207,12 @@ blockquote p:first-of-type {
 
 .wrapper {
   /* border: 1px solid yellow; */
-  max-inline-size: 636px;
-  margin: auto;
+  max-inline-size: 668px;
+  margin-inline-start: 530px;
 }
 
 .main-content {
+  /* background: aquamarine; */
+  padding-inline: 16p
   /* border: 1px solid blue; */
 }
