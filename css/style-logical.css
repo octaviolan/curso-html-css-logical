@@ -265,6 +265,10 @@ blockquote p:first-of-type {
   border-radius: 50%;
 }
 
+.form {
+  margin-block-end: 80px;
+}
+
 .form input {
   inline-size: 100%;
   border: 1px solid var(--white10);
@@ -288,6 +292,27 @@ blockquote p:first-of-type {
   border: none;
   font-weight: 700;
   font-family: 'Nunito', sans-serif;
+}
+
+.footer {
+  background: var(--white10);
+  padding-block: 20px;
+}
+
+.footer-content {
+  text-align: center;
+
+}
+
+.footer-content p{
+  font-size: 24px;
+  color: var(--white40);
+  margin: 0;
+  margin-block-end: 19px;
+}
+
+.footer-content img {
+  margin-inline: 11px;
 }
 
 @media screen and (min-width: 1250px) {
@@ -314,5 +339,13 @@ blockquote p:first-of-type {
     inset-inline-start: -300px;
     margin-block-start: 0;
     inline-size: 188px;
+  }
+
+  .footer {
+    padding-block: 48px;
+  }
+
+  .footer-content p{
+    font-size: 32px;
   }
 }
