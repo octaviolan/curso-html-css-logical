@@ -54,27 +54,29 @@ body {
 }
 
 .header {
-  position: sticky;
-  inset-block-start: -45px;
+  /* position: sticky; */
+  /* inset-block-start: -45px; */
 }
 
 .header-content {
-  position: relative;
-  inset-block-start: 64px;
+  padding-inline: 10px;
+  /* position: relative; */
+  /* inset-block-start: 64px; */
 }
 
 header {
+  margin-block-start: 20px;
   font-size: 14px;
   color: var(--white10);
-  position: absolute;
+  /* position: absolute; */
   /* top */
   /* inset-block-start: 0; */
   /* bottom */
   /* inset-block-end: ; */
   /* left */
-  inset-inline-start: -300px;
-  margin-block-start: 0;
-  inline-size: 188px;
+  /* inset-inline-start: -300px; */
+  /* margin-block-start: 0; */
+  /* inline-size: 188px; */
   /* right */
   /* inset-inline-end: ; */
 }
@@ -102,10 +104,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   text-align: start;
   margin-block-start: 64px;
   margin-block-end: 16px;
+  padding-inline: 10px;
 }
 
 h2 {
@@ -131,10 +134,11 @@ pre {
 
 p{
   color: var(--white20);
+  padding-inline: 10px;
 }
 
 .hero {
-  height: 350px;
+  height: 100px;
   background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
   /* background: linear-gradient(3.36deg, #212325 -63.62%, rgba(255, 255, 255, 0) 43.49%), url('../images/pattern.png'); */
   /* background-repeat: repeat; */
@@ -150,6 +154,7 @@ p{
 
 .section-content {
   counter-reset: titleList;
+  padding-inline: 10px;
 }
 
 .section-content h3 {
@@ -189,6 +194,12 @@ blockquote p{
 
 blockquote p:first-of-type {
   margin-block-end: 16px;
+}
+
+.section-content li {
+  color: var(--white20);
+  margin-block-end: 16px;
+  line-height: 24px;
 }
 
 .main hr {
@@ -277,4 +288,31 @@ blockquote p:first-of-type {
   border: none;
   font-weight: 700;
   font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (min-width: 1250px) {
+  .hero {
+    height: 350px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
+  }
+
+  .header-content {
+    position: relative;
+    inset-block-start: 64px;
+  }
+
+  header {
+    position: absolute;
+    inset-inline-start: -300px;
+    margin-block-start: 0;
+    inline-size: 188px;
+  }
 }
